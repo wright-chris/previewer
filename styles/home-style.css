@@ -6,6 +6,10 @@
     display: none;
 }
 
+#width-input:focus, #height-input: focus, #email-input:focus {
+    outline: none;
+}
+
 /*Global*/
 body {
     color: #2B2B2B;
