@@ -6,6 +6,10 @@
     display: none;
 }
 
+#width-input:focus, #height-input: focus, #email-input:focus {
+    outline: none;
+}
+
 /*Global*/
 body {
     color: #2B2B2B;
@@ -121,8 +125,8 @@ button::-moz-focus-inner {
 
 #e2e-image {
     display: flex;
-    height: 100%;
     width: 300px;
+    height: 400px;
     margin: auto;
     margin-left: 50px;
 }
@@ -194,7 +198,6 @@ button::-moz-focus-inner {
     margin: auto;
     -moz-appearance: textfield;
     transition: .3s;
-    outline: none;
 }
 
 #width-input:hover, #height-input:hover, #email-input:hover {
@@ -216,7 +219,6 @@ button::-moz-focus-inner {
     margin: auto;
     text-indent: 10px;
     transition: .3s;
-    outline: none;
 }
 
 ::placeholder {
