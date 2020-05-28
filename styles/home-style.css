@@ -121,14 +121,14 @@ button::-moz-focus-inner {
 
 #e2e-image {
     display: flex;
-    max-width: 300px;
+    max-width: 400px;
     max-height: 400px;
     margin: auto;
     margin-left: 50px;
 }
 
 #e2e-image img {
-    width: 300px;
+    width: 400px;
     border-radius: 10px;
 }
 
