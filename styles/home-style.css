@@ -119,10 +119,6 @@ button::-moz-focus-inner {
     margin-right: 50px;
 }
 
-#e2e-container, #e2e-image {
-    justify-content: space-between;
-}
-
 #e2e-image {
     display: flex;
     max-width: 300px;
