@@ -59,7 +59,7 @@ button::-moz-focus-inner {
 .logo {
     position: absolute;
     margin-left: 15%;
-    margin-top: 20px;
+    margin-top: 1rem;
     top: 0;
     width: 80px;
 }
@@ -442,7 +442,7 @@ button::-moz-focus-inner {
 @media only screen and (max-width: 1160px) {
     
     .logo {
-        margin-top: 0px;
+        margin-top: 0rem;
         margin-left: 12%;
     }
     
