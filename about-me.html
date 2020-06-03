@@ -3,22 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" content.type="text/css" href="styles/home-style.css">
+        <link rel="stylesheet" content.type="text/css" href="styles/about-me-style.css">
         <script src="scripts/home-script.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-        <title>Home | SWPQ</title>
+        <title>About Me | SWPQ</title>
     </head>
     <body>
     <div id="mobile-menu-button" onclick="menuOpener()"><img id="menu-icon"src="imgs/Menu.png"></div>
     <div id="mobile-menu">
         <div id="mobile-nav-links">
             <div class="mobile-nav-links-table">
-                <p class="mobile-nav-link-selected"><a href="home.html">HOME</a></p>
+                <p class="mobile-nav-link-list"><a href="home.html">HOME</a></p>
                 <p class="mobile-nav-link-list"><a href="pricing.html">PRICING</a></p>
                 <p class="mobile-nav-link-list"><a href="gallery.html">GALLERY</a></p>
                 <p class="mobile-nav-link-list"><a href="tutorials.html">TUTORIALS</a></p>
-                <p class="mobile-nav-link-list"><a href="about-me.html">ABOUT ME</a></p>
+                <p class="mobile-nav-link-selected"><a href="about-me.html">ABOUT ME</a></p>
             </div>
             <div id="mobile-media-links">
                 <a href="mailto:shawnwrightprofessionalquilter@gmail.com"><img class="email" src="imgs/envelope.png"></a>
@@ -40,61 +40,33 @@
             <div id="nav-media-container">
             <div id="nav-links">
                 <table class="nav-links-table">
-                    <th class="nav-link-selected"><a href="home.html">HOME</a></th>
+                    <th class="nav-link-list"><a href="home.html">HOME</a></th>
                     <th class="nav-link-list"><a href="pricing.html">PRICING</a></th>
                     <th class="nav-link-list"><a href="gallery.html">GALLERY</a></th>
                     <th class="nav-link-list"><a href="tutorials.html">TUTORIALS</a></th>
-                    <th class="nav-link-list"><a href="about-me.html">ABOUT ME</a></th>
+                    <th class="nav-link-selected"><a href="about-me.html">ABOUT ME</a></th>
                 </table>
             </div>
             </div>
         </nav>
-        <section id="showcase">
-            <div id="showcase-container">
-                <img class="showcase-img" src="imgs/quilt-colorful-angled-port.jpg">
-                <div class="showcase-text">Intricate, quality quilts by professional quilter Shawn Wright</div>
-            </div>
-        </section>
-        <main id="e2e-pricing">
+        <main id="about-me">
             <div id="main-container">
-                <div id="e2e-container">
-                <h3 class="e2e-title"><span class="edge-style">Edge-To-Edge</span> Pricing</h3>
-                <p class="e2e-desc">Enter the width and height in inches along with your email to get an instant price estimate on your quilt.</p>
-                    <div id="calc-items-container">
-                        <form id="home-form" action="https://formspree.io/mjvakanj" method="POST" target="a_iframe">
-                            <div class="calc-width-height">
-                                <div id="width"><h4>Width</h4></div>
-                                <div id="height"><h4>Height</h4></div>
-                                <div class="break"></div>
-                                <input id="width-input" type="text" placeholder="90" required autocomplete="off">
-                                <input id="height-input" type="text" placeholder="70" required autocomplete="off"><br>
-                            </div>
-                            <input id="email-input" name="reply-to" type="email" placeholder="your@email.com" required autocomplete="off">
-                            <input id="calc" type="text" name="quick-estimate" readonly autocomplete="off">
-                            <button onclick="result()" id="submit" type="submit">Get My Estimate</button>
-                            <img src="imgs/refresh.png" id="reset-form" onclick="history.go(0)" value="Refresh">
-                        </form>
-                        <iframe style="border:none;" width="0px" height="0px" name="a_iframe"></iframe>
-                    </div>
+                <div id="about-container">
+                <h3 class="about-title"><span class="edge-style">About</span> Me</h3>
+                <p class="about-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div id="e2e-image">
-                    <img src="imgs/quilt-morecolorful-angled-square.JPG">
+                <div id="about-image">
+                    <img src="imgs/profilepic-glasses-port.JPG">
                 </div>
             </div>
             </main>
         <section id="about-info">  
             <div id="about-card-container">
-                <div class="about-card">
-                    <img class="profile-pic" src="imgs/profilepic-noglasses-port.JPG">
-                    <h4>Shawn Wright</h4>
-                    <p>Professional quilter with proven experience providing high quality and excellent service to make your quilts beautiful and perfect and all that stuff.</p>
                     <div id="top-media-links">
                         <a href="mailto:shawnwrightprofessionalquilter@gmail.com"><img class="email" src="imgs/envelope.png"></a>
                         <a href="https://www.instagram.com/shawnwrightprofessionalquilter/"><img class="instagram" src="imgs/instagram.png"></a>
                         <a href="https://www.facebook.com/Shawn-Wright-Professional-Quilter-111473897034936"><img class="facebook" src="imgs/facebook.png"></a>
                     </div>
-                </div>
-                <div><img class="about-card-bg-img" src="imgs/quilt-colorful-angled-square.JPG"></div>
             </div>
         </section>
         <footer id="links-copyright">

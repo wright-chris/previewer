@@ -168,35 +168,36 @@ button::-moz-focus-inner {
 /*Edge-to-edge Pricing*/
 #main-container {
     display: flex;
+    flex-direction: row-reverse;
     margin-bottom: 10px;
     height: 393px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 #e2e-pricing {
     margin: auto;
 }
 
-#e2e-container {
+#about-container {
     margin: auto;
     width: 325px;
-    margin-right: 50px;
-}
-
-#e2e-image {
-    display: flex;
-    max-width: 400px;
-    max-height: 400px;
-    margin: auto;
     margin-left: 50px;
 }
 
-#e2e-image img {
+#about-image {
+    display: flex;
+    max-width: 300px;
+    max-height: 400px;
+    margin: auto;
+    margin-right: 50px;
+}
+
+#about-image img {
     width: 400px;
     border-radius: 10px;
 }
 
-.e2e-title {
+.about-title {
     width: 100%;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
@@ -209,7 +210,7 @@ button::-moz-focus-inner {
     color: #0E9B93;
 }
 
-.e2e-desc {
+.about-desc {
     font-family: 'Source Sans Pro', sans-serif;
     width: 100%;
     font-size: 18px;
@@ -403,7 +404,7 @@ button::-moz-focus-inner {
     position: absolute;
     margin: auto;
     height: 47px;
-    margin-top: 30px;
+    margin-top: -60px;
     left: 0;
     right: 0;
 }
@@ -443,10 +444,6 @@ button::-moz-focus-inner {
         width: 90%;
     }
     
-    #top-media-links {
-        margin-top: 12px;
-    }
-    
     #mobile-menu-button img{
         margin-top: 12px;
         display: block;
@@ -454,6 +451,10 @@ button::-moz-focus-inner {
         right: 5%;
         width: 30px;
         height: 30px;
+    }
+    
+    #about-container {
+        margin: auto;
     }
     
     /*Showcase*/

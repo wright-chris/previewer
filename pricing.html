@@ -3,19 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" content.type="text/css" href="styles/home-style.css">
-        <script src="scripts/home-script.js"></script>
+        <link rel="stylesheet" content.type="text/css" href="styles/pricing-style.css">
+        <script src="scripts/pricing-script.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-        <title>Home | SWPQ</title>
+        <title>Pricing | SWPQ</title>
     </head>
     <body>
     <div id="mobile-menu-button" onclick="menuOpener()"><img id="menu-icon"src="imgs/Menu.png"></div>
     <div id="mobile-menu">
         <div id="mobile-nav-links">
             <div class="mobile-nav-links-table">
-                <p class="mobile-nav-link-selected"><a href="home.html">HOME</a></p>
-                <p class="mobile-nav-link-list"><a href="pricing.html">PRICING</a></p>
+                <p class="mobile-nav-link-list"><a href="home.html">HOME</a></p>
+                <p class="mobile-nav-link-selected"><a href="pricing.html">PRICING</a></p>
                 <p class="mobile-nav-link-list"><a href="gallery.html">GALLERY</a></p>
                 <p class="mobile-nav-link-list"><a href="tutorials.html">TUTORIALS</a></p>
                 <p class="mobile-nav-link-list"><a href="about-me.html">ABOUT ME</a></p>
@@ -40,8 +40,8 @@
             <div id="nav-media-container">
             <div id="nav-links">
                 <table class="nav-links-table">
-                    <th class="nav-link-selected"><a href="home.html">HOME</a></th>
-                    <th class="nav-link-list"><a href="pricing.html">PRICING</a></th>
+                    <th class="nav-link-list"><a href="home.html">HOME</a></th>
+                    <th class="nav-link-selected"><a href="pricing.html">PRICING</a></th>
                     <th class="nav-link-list"><a href="gallery.html">GALLERY</a></th>
                     <th class="nav-link-list"><a href="tutorials.html">TUTORIALS</a></th>
                     <th class="nav-link-list"><a href="about-me.html">ABOUT ME</a></th>
@@ -49,13 +49,33 @@
             </div>
             </div>
         </nav>
-        <section id="showcase">
-            <div id="showcase-container">
-                <img class="showcase-img" src="imgs/quilt-colorful-angled-port.jpg">
-                <div class="showcase-text">Intricate, quality quilts by professional quilter Shawn Wright</div>
+        <main id="custom-pricing">
+            <div id="custom-main-container">
+                <div id="custom-container">
+                <h3 class="custom-title"><span class="edge-style">Custom</span> Pricing</h3>
+                <p class="custom-desc">Enter the width and height of your quilt in inches, along with your email and a message. We'll get back to you as soon as possible.</p>
+                    <div id="calc-items-container">
+                        <form id="home-form" action="https://formspree.io/xbjzoyok" method="POST" target="a_iframe">
+                            <div class="calc-width-height">
+                                <div id="width"><h4>Width</h4></div>
+                                <div id="height"><h4>Height</h4></div>
+                                <div class="break"></div>
+                                <input id="width-input" type="text" placeholder="90" required autocomplete="off">
+                                <input id="height-input" type="text" placeholder="70" required autocomplete="off"><br>
+                            </div>
+                            <input id="email-input" name="reply-to" type="email" placeholder="your@email.com" required autocomplete="off">
+                            <textarea id="message-input" name="custom-message" type="text" placeholder="Send a message..." autocomplete="off" cols="40" rows="5"></textarea>
+                            <input id="calc" type="text" name="quick-estimate" readonly autocomplete="off">
+                            <button onclick="result()" id="submit" type="submit">Get My Estimate</button>
+                            <img src="imgs/refresh.png" id="reset-form" onclick="history.go(0)" value="Refresh">
+                        </form>
+                        <iframe style="border:none;" width="0px" height="0px" name="a_iframe"></iframe>
+                    </div>
+                </div>
+                <div id="custom-image">
+                    <img src="imgs/quilts-stacked-port.jpg">
+                </div>
             </div>
-        </section>
-        <main id="e2e-pricing">
             <div id="main-container">
                 <div id="e2e-container">
                 <h3 class="e2e-title"><span class="edge-style">Edge-To-Edge</span> Pricing</h3>
@@ -81,7 +101,7 @@
                     <img src="imgs/quilt-morecolorful-angled-square.JPG">
                 </div>
             </div>
-            </main>
+        </main>
         <section id="about-info">  
             <div id="about-card-container">
                 <div class="about-card">
