@@ -26,16 +26,32 @@ function menuOpener() {
     var mobileMenu = document.getElementById("mobile-menu");
     var menuIcon = document.getElementById("menu-icon");
     var allThings = document.getElementById("everything");
+    var transparentBG = document.getElementById("transparent-closer");
 
     if (mobileMenu.style.display === "block") {
         mobileMenu.style.display = "none";
         menuIcon.style.filter = "brightness(0%)";
         allThings.style.filter = "blur(0px)";
         allThings.style.pointerEvents = "auto";
+        transparentBG.style.display = "none";
     } else {
         mobileMenu.style.display = "block";
         menuIcon.style.filter = "brightness(1000%)";  
         allThings.style.filter = "blur(5px)";
         allThings.style.pointerEvents = "none";
+        transparentBG.style.display = "block";
     }
+}
+
+function menuCloser() {
+    var mobileMenu = document.getElementById("mobile-menu");
+    var menuIcon = document.getElementById("menu-icon");
+    var allThings = document.getElementById("everything");
+    var transparentBG = document.getElementById("transparent-closer");
+    
+    mobileMenu.style.display = "none";
+    menuIcon.style.filter = "brightness(0%)";
+    allThings.style.filter = "blur(0px)";
+    allThings.style.pointerEvents = "auto";
+    transparentBG.style.display = "none";
 }
