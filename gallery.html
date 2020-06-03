@@ -4,10 +4,77 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" content.type="text/css" href="styles/gallery-style.css">
-        <script src="scripts/gallery-script.js"></script>
+        <script src="scripts/home-script.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
         <title>Gallery | SWPQ</title>
     </head>
     <body>
-    
+    <div id="mobile-menu-button" onclick="menuOpener()"><img id="menu-icon"src="imgs/Menu.png"></div>
+    <div id="mobile-menu">
+        <div id="mobile-nav-links">
+            <div class="mobile-nav-links-table">
+                <p class="mobile-nav-link-list"><a href="index.html">HOME</a></p>
+                <p class="mobile-nav-link-list"><a href="pricing.html">PRICING</a></p>
+                <p class="mobile-nav-link-list"><a href="gallery.html">GALLERY</a></p>
+                <p class="mobile-nav-link-selected"><a href="tutorials.html">TUTORIALS</a></p>
+                <p class="mobile-nav-link-list"><a href="about-me.html">ABOUT ME</a></p>
+            </div>
+            <div id="mobile-media-links">
+                <a href="mailto:shawnwrightprofessionalquilter@gmail.com"><img class="email" src="imgs/envelope.png"></a>
+                <a href="https://www.instagram.com/shawnwrightprofessionalquilter/"><img class="instagram" src="imgs/instagram.png"></a>
+                <a href="https://www.facebook.com/Shawn-Wright-Professional-Quilter-111473897034936"><img class="facebook" src="imgs/facebook.png"></a>
+            </div>
+        </div>
+    </div>
+    <div id="transparent-closer" onclick="menuCloser()"></div>
+    <div id="everything">
+        <nav id="title-links">
+            <div id="site-title">
+                <div class="logo"><img src="imgs/logo.png"></div>
+                <div class="title-container">
+                    <h1 class="site-title-name">SHAWN WRIGHT</h1>
+                    <h2 class="site-title-job">PROFESSIONAL QUILTER</h2>
+                </div>
+            </div>
+            <div id="nav-media-container">
+            <div id="nav-links">
+                <table class="nav-links-table">
+                    <th class="nav-link-list"><a href="index.html">HOME</a></th>
+                    <th class="nav-link-list"><a href="pricing.html">PRICING</a></th>
+                    <th class="nav-link-selected"><a href="gallery.html">GALLERY</a></th>
+                    <th class="nav-link-list""><a href="tutorials.html">TUTORIALS</a></th>
+                    <th class="nav-link-list"><a href="about-me.html">ABOUT ME</a></th>
+                </table>
+            </div>
+            </div>
+        </nav>
+        <section id="showcase">
+            <div id="showcase-container">
+                <img class="showcase-img" src="imgs/quilt-colorful-angled-port.jpg">
+                <div class="showcase-text">Gallery coming soon!</div>
+            </div>
+        </section>
+        <section id="about-info">  
+            <div id="about-card-container">
+                <div class="about-card">
+                    <img class="profile-pic" src="imgs/profilepic-noglasses-port.JPG">
+                    <h4>Shawn Wright</h4>
+                    <p>Professional quilter with proven experience providing high quality and excellent service to make your quilts beautiful and perfect and all that stuff.</p>
+                    <div id="top-media-links">
+                        <a href="mailto:shawnwrightprofessionalquilter@gmail.com"><img class="email" src="imgs/envelope.png"></a>
+                        <a href="https://www.instagram.com/shawnwrightprofessionalquilter/"><img class="instagram" src="imgs/instagram.png"></a>
+                        <a href="https://www.facebook.com/Shawn-Wright-Professional-Quilter-111473897034936"><img class="facebook" src="imgs/facebook.png"></a>
+                    </div>
+                </div>
+                <div><img class="about-card-bg-img" src="imgs/quilt-colorful-angled-square.JPG"></div>
+            </div>
+        </section>
+        <footer id="links-copyright">
+            <div class="copyright-text">
+                <p>Shawn Wright Profesional Quilter, copyright &copy 2020</p>
+            </div>
+        </footer>
+    </div>
     </body>
 </html>
